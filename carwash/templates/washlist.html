@@ -11,7 +11,7 @@
 <h1>Hello</h1>
     <form action="/washapp/" method="post"> 
         <input type="date" name="datewash" value="{{req}}">
-        <input type="submit" value="Показать">
+        <input class="button7" type="submit" value="Показать">
         {% csrf_token %}
         </form>
 
@@ -27,13 +27,13 @@
 </ul>
 <ul>
     <label>Введите имя</label>
-    <input type="text" required name="client_name" pattern="[A-Za-zА-Яа-яЁё]{2,}">
+    <input class="email-field" type="text" required name="client_name" pattern="[A-Za-zА-Яа-яЁё]{2,}">
 </ul>
 <ul>
     <label>Введите номер</label>
-    <input type="text" required name="client_numb" pattern="[+7/7/8][0-9]{10}"  maxlength="12">
+    <input class="email-field"" type="text" required name="client_numb" pattern="[+7/7/8][0-9]{10}"  maxlength="12">
 </ul>
- <input type="submit" value="Подать заявку">
+ <input class="button7" type="submit" value="Подать заявку">
     {% csrf_token %}
     </form>
 </body>
