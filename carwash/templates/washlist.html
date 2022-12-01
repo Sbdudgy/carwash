@@ -1,1 +1,5 @@
-<a>Hello</a>
+<ul>
+    {% for i in all_zayav %}
+    <li>{{i.date}}, {{i.time}}</li>
+    {% endfor %}
+</ul>
