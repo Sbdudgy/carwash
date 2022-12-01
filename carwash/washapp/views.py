@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Zayavki, Timetable
+from .models import Zayavki, Timetable, Client
 from datetime import date
 
 def washappView(request):
@@ -28,3 +28,13 @@ def getTimeFreeView(request):
     return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time,'req':req,'vse_nuzh':vse_nuzh})
     
 
+def AddNewZayavView(request):
+    reqname=request.POST['client_name']
+    reqnumb=request.POST['client_numb']
+    sel=request.POST['select']
+    req=request.POST['rec']
+    cl=Client(name=reqname,number=reqnumb)
+    cl.save()
+    zayavka=Zayavki(clientsid=cl,date=req,time=sel)
+    zayavka.save()
+    return render(request,'success.html', {'client':cl, 'zayavka':zayavka})

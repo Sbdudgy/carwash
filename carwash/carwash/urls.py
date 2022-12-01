@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from washapp.views import washappView,getTimeFreeView
+from washapp.views import washappView,getTimeFreeView, AddNewZayavView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('washapp/', getTimeFreeView),
-    #path('TimeFree/', getTimeFreeView),
+    path('addzayav/', AddNewZayavView),
 ]
