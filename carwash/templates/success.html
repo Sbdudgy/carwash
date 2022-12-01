@@ -1,9 +1,5 @@
-<!-- <form action="/TimeFree/" method="post"> 
-    <input type="date" name="datewash" value="{{req}}">
-    <input type="submit" value="Показать">
-    {% csrf_token %}
-    </form>
-     -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'static/style.css' %}"/>
      <label>Уважаемый(ая) {{client.name}} ,  Ваша заявка на {{zayavka.date}} в {{zayavka.time}} принята! Спасибо, что выбрали нас!</label>
 
      <form action="/washapp/"> 

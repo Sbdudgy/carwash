@@ -21,4 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('washapp/', getTimeFreeView),
     path('addzayav/', AddNewZayavView),
+    
 ]

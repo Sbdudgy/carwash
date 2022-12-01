@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
 
+<html>
+    <head>
+        {% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+{% endblock %}
+</head>
+<body>
+<h1>Hello</h1>
     <form action="/washapp/" method="post"> 
         <input type="date" name="datewash" value="{{req}}">
         <input type="submit" value="Показать">
@@ -26,3 +36,6 @@
  <input type="submit" value="Подать заявку">
     {% csrf_token %}
     </form>
+</body>
+
+</html>
