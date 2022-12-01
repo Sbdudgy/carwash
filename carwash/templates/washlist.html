@@ -3,8 +3,3 @@
 <input type="submit" value="Показать">
 {% csrf_token %}
 </form>
-<ul>
-    {% for i in all_zayav %}
-    <li>{{i.date}}, {{i.time}}</li>
-    {% endfor %}
-</ul>
