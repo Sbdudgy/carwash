@@ -1,5 +1,11 @@
-<form action="/TimeFree/" method="post"> 
-<input type="date" name="datewash" >
-<input type="submit" value="Показать">
-{% csrf_token %}
-</form>
+<form action="/washapp/" method="post"> 
+    <input type="date" name="datewash" value="{{req}}">
+    <input type="submit" value="Показать">
+    {% csrf_token %}
+    </form>
+    
+<ul>
+    {% for i in vse_nuzh %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>

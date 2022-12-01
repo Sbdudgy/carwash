@@ -19,6 +19,6 @@ from washapp.views import washappView,getTimeFreeView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('washapp/', washappView),
-    path('TimeFree/', getTimeFreeView),
+    path('washapp/', getTimeFreeView),
+    #path('TimeFree/', getTimeFreeView),
 ]
