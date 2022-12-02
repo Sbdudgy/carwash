@@ -2,13 +2,13 @@
 {% load static %}
 
 <html>
-    <head>
+    <head class="colorhead">
         {% block css %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 {% endblock %}
+<h1 class="colorhead"><img src="{% static 'img/logo.png' %}" height="100" width="260"></h1>
 </head>
-<body>
-<h1>Hello</h1>
+<body class="bodycolor">
     <form action="/washapp/" method="post"> 
         <input type="date" name="datewash" value="{{req}}" min="{{req}}">
         <input class="button7" type="submit" value="Показать">

@@ -1,9 +1,20 @@
-body {
+.bodycolor {
     background-color: #f05133;
-    color: #efaa9d;
+    color: #ebeaea;
     text-align: center;
-    font-family: Lato, Tahoma, sans-serif;
+    font-family: Impact,Tahoma, sans-serif;
   }
+
+  .colorhead {
+    background-color: #51251d;
+    color: #ebeaea;
+    text-align: center;
+    width: 100%;
+    font-family: Impact,Tahoma, sans-serif;
+    
+  }
+
+  
   
   h1, h2, h3, h4, h5 {
     font-weight: normal;
@@ -25,7 +36,7 @@ body {
   
   /* style input field text */
   ::-webkit-input-placeholder {
-     color: #f4f2ca;
+     color: #919086;
      opacity: .8;
   }
   
@@ -33,7 +44,7 @@ body {
   .email-field {
     width: 80px;
     display: inline-block;
-    color: #f4f2ca;
+    color: #8c8b7b;
     text-align: center;
     background-color: #d8492e;
     padding: .9em 1.8em;
@@ -62,18 +73,19 @@ body {
   
   input.button7 {
     font-weight: 700;
-    color: white;
+    color: rgb(95, 22, 22);
     text-decoration: none;
     padding: .8em 1em calc(.8em + 3px);
-    border-radius: 3px;
-    background: rgb(141, 1, 1);
-    box-shadow: 0 -3px rgb(141, 1, 1) inset;
+    border: none;
+    background: rgb(255, 172, 5);
+    box-shadow: 0 -3px rgb(235, 84, 13) inset;
     transition: 0.2s;
+    font-family: Impact,Tahoma, sans-serif;
   } 
-  input.button7:hover { background: rgb(141, 1, 1); }
+  input.button7:hover { background: rgb(215, 13, 13); }
   input.button7:active {
-    background: rgb(69, 4, 4);
-    box-shadow: 0 3px rgb(69, 4, 4)inset;
+    background: rgb(216, 127, 127);
+    box-shadow: 0 3px rgb(198, 71, 71)inset;
   }
 
   /* vertically position everything for effect */
