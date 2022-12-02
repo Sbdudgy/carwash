@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Zayavki, Timetable, Client
-from datetime import date
+from datetime import date, datetime, time, timedelta
 
 def washappView(request):
     vse_zayav=Zayavki.objects.all()
@@ -20,7 +20,15 @@ def getTimeFreeView(request):
     for i in vse_zayav:
         if str(i.date)==str(req):
             vse_nuzh.remove(i.time)
-    return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time,'req':req,'vse_nuzh':vse_nuzh})
+    if req==str(date.today()):
+        a = datetime.now().time()   
+        for i in vse_nuzh:
+            b=time(int(i.split(':')[0]),int(i.split(':')[1]),0)
+            d1 = timedelta(hours=a.hour, minutes=a.minute, seconds=a.second)
+            d2 = timedelta(hours=b.hour, minutes=b.minute, seconds=b.second)
+            if d1>d2:
+                vse_nuzh.remove(i)
+    return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time,'req':req,'vse_nuzh':vse_nuzh, 'today':str(date.today())})
     
 
 def AddNewZayavView(request):

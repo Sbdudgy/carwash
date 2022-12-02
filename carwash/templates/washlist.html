@@ -6,7 +6,7 @@
 <body class="bodycolor">
     <h2>Запись на мойку автомобиля ☀</h2>
     <form action="/washapp/" method="post"> 
-        <input type="date" name="datewash" value="{{req}}" min="{{req}}">
+        <input type="date" name="datewash" value="{{req}}" min="{{today}}">
         <input class="button7" type="submit" value="Показать">
         {% csrf_token %}
         </form>
