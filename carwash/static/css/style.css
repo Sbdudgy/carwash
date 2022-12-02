@@ -39,8 +39,12 @@
     font-family: Impact,Tahoma, sans-serif;
     
     box-sizing: border-box;
-    width: 100%;
-    padding: 40px 50px;
+    position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  
+    padding: 10px 50px;
   }
   
 
