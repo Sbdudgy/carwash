@@ -148,7 +148,7 @@
     }
 
   /* vertically position everything for effect */
-  @media screen and (min-width: 480px) {
+  /* @media screen and (min-width: 480px) {
     
     .middle {
       width: 100%;
@@ -163,4 +163,4 @@
       bottom: 0;
       width: 100%;
     }
-  }
+  } */
