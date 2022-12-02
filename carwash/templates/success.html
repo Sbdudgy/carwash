@@ -2,16 +2,10 @@
 {% load static %}
 
 <html>
-    <head class="colorhead">
-        {% block css %}
-<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-<link rel="shortcut icon" type="image/png" href="{% static 'images/car_icon.ico' %}"/>
-{% endblock %}
-<h1 class="colorhead"><img src="{% static 'img/logo.png' %}" height="100" width="260"></h1>
-</head>
+    {% include 'header.html' %}
 <body class="bodycolor">
-     <label class="all-ground-text">Уважаемый(ая) {{client.name}} ,  Ваша заявка на {{zayavka.date}} в {{zayavka.time}} принята! Спасибо, что выбрали нас!</label>
-    
+     <label >Уважаемый(ая) {{client.name}} ,  Ваша заявка на {{zayavka.date}} в {{zayavka.time}} принята! Спасибо, что выбрали нас!</label>
+     
      <form action="/washapp/"> 
         <input class="button7" type="submit" value="Вернуться на главную">
      </form>

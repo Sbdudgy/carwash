@@ -31,28 +31,16 @@
     left: -500px;
   }
 
-  .all-ground-text {
-    background: #51251d;
-    color: #ebeaea;
-    text-align: left;
-    font-family: Impact,Tahoma, sans-serif;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 20%;
-    position: relative;
-    padding: 10px 50px;
-    margin: 50px 0;
-    
-  }
+  
   .footer-distributed{
     background: #51251d;
     color: #ebeaea;
-    text-align: left;
+    text-align: right;
     font-family: Impact,Tahoma, sans-serif;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    
     box-sizing: border-box;
     width: 100%;
-    padding: 55px 50px;
+    padding: 40px 50px;
   }
   
 
