@@ -75,6 +75,7 @@ body {
     background: rgb(69, 4, 4);
     box-shadow: 0 3px rgb(69, 4, 4)inset;
   }
+
   /* vertically position everything for effect */
   @media screen and (min-width: 480px) {
     
