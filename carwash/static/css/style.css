@@ -3,23 +3,77 @@
     color: #ebeaea;
     text-align: center;
     font-family: Impact,Tahoma, sans-serif;
+    line-height: 20px;
+    
   }
 
   .colorhead {
-    background-color: #51251d;
+    background: #51251d;
     color: #ebeaea;
     text-align: center;
-    width: 100%;
     font-family: Impact,Tahoma, sans-serif;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 55px 50px;
+  }
+
+  .all-ground {
+    background: #51251d;
+    color: #ebeaea;
+    text-align: left;
+    font-family: Impact,Tahoma, sans-serif;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 20%;
+    position: relative;
+    padding: 10px 50px;
+    left: -500px;
+  }
+
+  .all-ground-text {
+    background: #51251d;
+    color: #ebeaea;
+    text-align: left;
+    font-family: Impact,Tahoma, sans-serif;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 20%;
+    position: relative;
+    padding: 10px 50px;
+    margin: 50px 0;
     
   }
+  .footer-distributed{
+    background: #51251d;
+    color: #ebeaea;
+    text-align: left;
+    font-family: Impact,Tahoma, sans-serif;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 55px 50px;
+  }
+  
 
   
   
   h1, h2, h3, h4, h5 {
     font-weight: normal;
   }
-  
+  input[type="date"]{
+    background-color: rgb(255, 172, 5);
+    padding: 11px;
+    font-family: Impact,Tahoma, sans-serif;
+    color: rgb(95, 22, 22);
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    
+}
+
+
   p a {
     color: #f4f2ca;
     text-decoration: none;
@@ -42,9 +96,9 @@
   
   /* Input field that looks like a button */
   .email-field {
-    width: 80px;
+    width: 110px;
     display: inline-block;
-    color: #8c8b7b;
+    color: #f6f5ec;
     text-align: center;
     background-color: #d8492e;
     padding: .9em 1.8em;
@@ -81,12 +135,29 @@
     box-shadow: 0 -3px rgb(235, 84, 13) inset;
     transition: 0.2s;
     font-family: Impact,Tahoma, sans-serif;
+    
   } 
   input.button7:hover { background: rgb(215, 13, 13); }
   input.button7:active {
     background: rgb(216, 127, 127);
     box-shadow: 0 3px rgb(198, 71, 71)inset;
   }
+
+  select {
+    width: 140px;
+    height: 35px;
+    padding: 5px 35px 5px 5px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("/uploads/media/default/0001/02/f7b4d3d2ba3fe1d8518e6e63d7740e1e73921abf.png") 96% / 15% no-repeat #eee;
+    }
+    label{
+      font-size: 20px;
+      position: relative;
+    }
 
   /* vertically position everything for effect */
   @media screen and (min-width: 480px) {
