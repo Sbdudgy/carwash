@@ -11,6 +11,7 @@ def getTimeFreeView(request):
     vse_zayav=Zayavki.objects.all()
     vse_time= Timetable.objects.all()
     vse_nuzh=[]
+    dely=[]
     for k in vse_time:
         vse_nuzh.append(k.time)
     if request.POST:
@@ -27,7 +28,9 @@ def getTimeFreeView(request):
             d1 = timedelta(hours=a.hour, minutes=a.minute, seconds=a.second)
             d2 = timedelta(hours=b.hour, minutes=b.minute, seconds=b.second)
             if d1>d2:
-                vse_nuzh.remove(i)
+                dely.append(i)
+    for j in dely:
+        vse_nuzh.remove(j)
     return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time,'req':req,'vse_nuzh':vse_nuzh, 'today':str(date.today())})
     
 
