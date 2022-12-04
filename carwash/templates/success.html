@@ -4,12 +4,15 @@
 <html>
     {% include 'header.html' %}
 <body class="bodycolor">
+    <div class="secsess">
      <label >Уважаемый(ая) {{client.name}} ,  Ваша заявка на {{zayavka.date}} в {{zayavka.time}} принята! Спасибо, что выбрали нас!</label>
      
      <form action="/washapp/"> 
         <input class="button7" type="submit" value="Вернуться на главную">
      </form>
-</body>
+    </div>
+
 {% include 'footer.html' %}
+</body>
 </html>
 

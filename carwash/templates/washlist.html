@@ -4,7 +4,12 @@
 <html>
     {% include 'header.html' %}
 <body class="bodycolor">
+    <div>
+        
     <h2>Запись на мойку автомобиля ☀</h2>
+    <table><tr>
+        <td width="20%"><img src="{% static 'img/price.jpg' %}" height="550" width="500"></td>
+        <td>
     <form action="/washapp/" method="post"> 
         <input type="date" name="datewash" value="{{req}}" min="{{today}}">
         <input class="button7" type="submit" value="Показать">
@@ -32,6 +37,11 @@
  <input class="button7" type="submit" value="Подать заявку">
     {% csrf_token %}
     </form>
-</body>
+</td>
+</tr>
+</table>
+</div>
+
 {% include 'footer.html' %}
+</body>
 </html>

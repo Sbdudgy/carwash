@@ -1,21 +1,42 @@
 .bodycolor {
-    background-color: #f05133;
-    color: #ebeaea;
-    text-align: center;
-    font-family: Impact,Tahoma, sans-serif;
-    line-height: 20px;
+  background-color: #f05133;
+  color: #ebeaea;
+  text-align: center;
+  font-family: Impact,Tahoma, sans-serif;
+  line-height: 20px;
+  
+}
+
+  .header1{
     
-  }
+      height: 500px; /* Высота шапки */
+      background-color: #330606; /* Фон шапки */
+       margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+      border-radius: 5px; /* Закругляются углы блока */
+      box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+    }
 
   .colorhead {
+    position:absolute;
     background: #51251d;
     color: #ebeaea;
     text-align: center;
     font-family: Impact,Tahoma, sans-serif;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
+    
     width: 100%;
-    padding: 55px 50px;
+   
+  }
+  .colorhead1 {
+    position:absolute;
+    background: #51251d;
+    color: #ebeaea;
+    text-align: center;
+    font-family: Impact,Tahoma, sans-serif;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    
+    width: 80%;
+   
   }
 
   .all-ground {
@@ -34,6 +55,15 @@
 
   
   .footer-distributed{
+    background-color: #51251d;
+    color: #ebeaea;
+    text-align: right;
+    font-family: Impact,Tahoma, sans-serif;
+    
+   
+  }
+  
+  .footerstyle{
     background: #51251d;
     color: #ebeaea;
     text-align: right;
@@ -45,7 +75,6 @@
   
     padding: 10px 50px;
   }
-  
   
   h1, h2, h3, h4, h5 {
     font-weight: normal;
