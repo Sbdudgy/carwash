@@ -2,10 +2,12 @@ from django.shortcuts import render
 from .models import Zayavki, Timetable, Client
 from datetime import date, datetime, time, timedelta
 
-def washappView(request):
-    vse_zayav=Zayavki.objects.all()
-    vse_time= Timetable.objects.all()
-    return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time})
+
+""" метод получает все заявки и все шаблонное время из бд
+так же получает дату, выбранную пользователем, либо автоматически 
+генерирует сегодняшнюю дату. сверяя даты и забронированное время с шаблонами
+времени выбираем какое время доступно сохраняем его. возвращаем нужный нам html 
+и передаем доступное время, выбранную дату и сегодняшнюю дату """
 
 def getTimeFreeView(request):
     vse_zayav=Zayavki.objects.all()
@@ -31,9 +33,11 @@ def getTimeFreeView(request):
                 dely.append(i)
     for j in dely:
         vse_nuzh.remove(j)
-    return render(request,'washlist.html', {'all_zayav':vse_zayav,'all_time':vse_time,'req':req,'vse_nuzh':vse_nuzh, 'today':str(date.today())})
+    return render(request,'washlist.html', {'req':req,'vse_nuzh':vse_nuzh, 'today':str(date.today())})
     
-
+""" метод считываем имя клиента, номер, выбранное время и дату. далее 
+создаем экземпляры класса Клиента и Заявки и заполняем данные, 
+почле чего сохраняем данные в бд и возвращаем новый html файл с данными и клиенте и заявке """
 def AddNewZayavView(request):
     reqname=request.POST['client_name']
     reqnumb=request.POST['client_numb']
